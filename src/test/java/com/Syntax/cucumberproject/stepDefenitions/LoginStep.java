@@ -68,11 +68,10 @@ public class LoginStep {
 	@Then ("^I unsuccessfully logged in$")
 	public void i_unsuccessfully_logged_in() throws Throwable {
 
+	}@Then("^I quit browser$")
+	public void i_quit_browser() throws Throwable {
+	  driver.quit();
 	}
-
-	@Then("^I close browser$")
-	public void i_close_browser() throws Throwable {
-		driver.quit();
-	}
-
+	
 }
+

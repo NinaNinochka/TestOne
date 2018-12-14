@@ -1,203 +1,107 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/hw.Feature");
 formatter.feature({
   "line": 1,
-  "name": "LoginFeature",
+  "name": "Create an account",
   "description": "",
-  "id": "loginfeature",
+  "id": "create-an-account",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Valid Login",
+  "line": 4,
+  "name": "Valid informations",
   "description": "",
-  "id": "loginfeature;valid-login",
+  "id": "create-an-account;valid-informations",
   "type": "scenario",
   "keyword": "Scenario"
-});
-formatter.step({
-  "line": 4,
-  "name": "I open browser",
-  "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "I navihate to the FreeCrm",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 6,
-  "name": "I enter \"Nina__\" and \"odimeg23\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "I click login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "I successfully logged in",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStep.i_open_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStep.i_navihate_to_the_FreeCrm()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "location": "LoginStep.i_click_login_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStep.i_successfully_logged_in()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 12,
-  "name": "Invalid login",
-  "description": "",
-  "id": "loginfeature;invalid-login",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 13,
-  "name": "I open browser",
+  "name": "I open browser1",
   "keyword": "Given "
 });
 formatter.step({
+  "line": 6,
+  "name": "I navigate to FreeCRM",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "I  click on Sign up",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "I click on drop down select",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I enter user information \"Alina\" and \"Mishchenko\" and \"mishchenko.1994@bk.ru\" and \"mishchenko.1994@bk.ru\"  and \"Alina__\" and \"1234567\" and \"1234567\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I click on check box",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I click submit",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I fill company info \"Syntax\" and \"4109197133\"",
+  "keyword": "And "
+});
+formatter.step({
   "line": 14,
-  "name": "I navihate to the FreeCrm",
+  "name": "I click on continue",
   "keyword": "And "
 });
 formatter.step({
   "line": 15,
-  "name": "I enter \"Nina\" and \"odimeg23\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "I click login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "I unsuccessfully logged in",
+  "name": "I complite registration",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStep.i_open_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStep.i_navihate_to_the_FreeCrm()"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.match({
-  "location": "LoginStep.i_click_login_button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStep.i_unsuccessfully_logged_in()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Test login with invalid password",
-  "description": "",
-  "id": "loginfeature;test-login-with-invalid-password",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 21,
-  "name": "I open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 22,
-  "name": "I navihate to the FreeCrm",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I enter \"Ni\" and \"odi\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 24,
-  "name": "I click login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I should see an error text",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "I close browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStep.i_open_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStep.i_navihate_to_the_FreeCrm()"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.match({
-  "location": "LoginStep.i_click_login_button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LoginStep.i_should_see_an_error_text()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LoginStep.i_close_browser()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });
